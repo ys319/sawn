@@ -1,0 +1,15 @@
+{
+  "empty_arr": [],
+  "empty_obj": {},
+  "wrapper": {
+    "inner_arr": [],
+    "inner_obj": {},
+    "nested": {
+      "deep_arr": [],
+      "deep_obj": {}
+    }
+  },
+  "true": 1,
+  "false": 0,
+  "null": "not null"
+}

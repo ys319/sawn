@@ -1,0 +1,13 @@
+// Test: Key quoting is flexible — bare and quoted IDENT keys are equivalent
+name="Luke"
+"email"="luke@rebels.org"
+"build-date"="2026-03-05"
+"Content-Type"="text/html"
+_internal="private"
+"_debug"=true
+config{}
+  "host"="localhost"
+  port=8080
+data[][] "id",name
+  1,"Alice"
+  2,"Bob"

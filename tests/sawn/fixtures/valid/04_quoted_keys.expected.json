@@ -1,0 +1,11 @@
+{
+  "123": 456,
+  "some key": "spaced value",
+  "名前": "太郎",
+  "key=with=equals": "tricky",
+  "key with \"quotes\"": "also tricky",
+  "@special": "at sign",
+  "[]": "brackets",
+  "-starts-with-hyphen": "no ident",
+  "-inf": "neg inf as key must be quoted"
+}

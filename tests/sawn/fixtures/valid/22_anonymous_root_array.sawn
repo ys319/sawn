@@ -1,0 +1,6 @@
+// Test: Anonymous root array (JSON root = array of primitives)
+[]
+  1
+  "hello"
+  true
+  null

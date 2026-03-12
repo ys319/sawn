@@ -1,0 +1,8 @@
+{
+  "simple": "Hello\nWorld",
+  "with_indent": "Line one\n  Indented line\nBack to base",
+  "config": {
+    "query": "SELECT *\nFROM users\nWHERE active = true",
+    "name": "test"
+  }
+}

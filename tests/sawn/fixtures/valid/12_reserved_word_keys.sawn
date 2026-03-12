@@ -1,0 +1,9 @@
+// Test: Value-type keywords used as keys (must be quoted)
+"true"=1
+"false"=0
+"null"="not null"
+"inf"="finite"
+"nan"="a number"
+wrapper{}
+  "true"="quoted style recommended"
+  "false"="also quoted"

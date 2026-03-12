@@ -1,0 +1,10 @@
+{
+  "empty_obj": {},
+  "empty_arr": [],
+  "empty_str": "",
+  "nested": {
+    "also_empty": {},
+    "also_empty_arr": [],
+    "has_value": 1
+  }
+}

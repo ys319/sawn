@@ -1,0 +1,26 @@
+// Test: All named escape sequences and \xHH hex escapes
+// §2.1: Named escapes
+null_char="\0"
+bell="\a"
+backspace="\b"
+tab="\t"
+newline="\n"
+vertical_tab="\v"
+form_feed="\f"
+carriage_return="\r"
+backslash="\\"
+quote="\""
+// §2.1: \xHH hex escapes for control characters without named escapes
+hex_01="\x01"
+hex_06="\x06"
+hex_0e="\x0e"
+hex_1f="\x1f"
+// §2.1: \xHH uppercase accepted
+hex_upper="\x1F"
+// §2.1: \xHH above control range (U+0080 = 2-byte UTF-8)
+hex_80="\x80"
+hex_ff="\xff"
+// Combined escapes in single string
+combined="\0\a\b\t\n\v\f\r\\\""
+// Hex escapes in context
+mixed="start\x01middle\x1fend"

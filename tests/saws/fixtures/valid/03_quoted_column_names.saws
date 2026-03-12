@@ -1,0 +1,4 @@
+// §3.2, §3.5: Quoted column names — spaces, commas, reserved words
+"full name","home,address","true"
+"Alice Smith","123 Main St","yes"
+"Bob Jones","456 Oak Ave","no"

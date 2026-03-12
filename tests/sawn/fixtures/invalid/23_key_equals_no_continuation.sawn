@@ -1,0 +1,3 @@
+// INVALID: key= with no value and no indented continuation
+description=
+next_key="value"

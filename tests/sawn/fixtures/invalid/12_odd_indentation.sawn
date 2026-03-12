@@ -1,0 +1,3 @@
+// INVALID: 3-space indentation
+config{}
+   host="localhost"

@@ -1,0 +1,14 @@
+{
+  "mixed": [
+    42,
+    "hello",
+    true,
+    null,
+    { "key": "value", "nested": true },
+    "between objects",
+    { "x": 1 },
+    {},
+    99.9,
+    "$$INF$$"
+  ]
+}

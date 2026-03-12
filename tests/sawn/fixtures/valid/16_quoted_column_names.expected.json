@@ -1,0 +1,6 @@
+{
+  "data": [
+    { "column one": "a", "column two": 1, "regular": true },
+    { "column one": "b", "column two": 2, "regular": false }
+  ]
+}

@@ -1,0 +1,3 @@
+// §3.5: Multiple spaces between [][] and column names is a parse error
+data[][]  name,age
+  "Alice",30

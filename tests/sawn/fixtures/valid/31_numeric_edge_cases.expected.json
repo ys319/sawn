@@ -1,0 +1,18 @@
+{
+  "very_large": 1e308,
+  "very_small": 5e-324,
+  "neg_large": -1e308,
+  "sci_upper": 1.5e10,
+  "sci_plus": 100,
+  "just_frac": 0.5,
+  "long_frac": 3.141592653589793,
+  "neg_frac": -0.001,
+  "neg_zero_frac": -0.0,
+  "neg_zero_exp": -0.0,
+  "neg_zero_full": -0.0,
+  "exp_plus": 6.022e+23,
+  "exp_neg": 1.38e-23,
+  "max_safe": 9007199254740991,
+  "neg_max_safe": -9007199254740991,
+  "single_digit": 0
+}

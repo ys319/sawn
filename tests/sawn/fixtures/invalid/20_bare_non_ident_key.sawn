@@ -1,0 +1,2 @@
+// INVALID: Bare key that doesn't match IDENT (must be quoted)
+some key="value"

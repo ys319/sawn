@@ -1,0 +1,3 @@
+// INVALID: 4-space indentation (must use exactly 2 spaces)
+config
+    host="localhost"

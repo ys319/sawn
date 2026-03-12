@@ -1,0 +1,9 @@
+[
+  { "desc": "tab", "value": "has\ttab" },
+  { "desc": "newline", "value": "has\nnewline" },
+  { "desc": "quote", "value": "has\"quote" },
+  { "desc": "backslash", "value": "has\\backslash" },
+  { "desc": "hex", "value": "hexAchar" },
+  { "desc": "null_char", "value": "has\u0000null" },
+  { "desc": "bell", "value": "has\u0007bell" }
+]

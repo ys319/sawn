@@ -1,0 +1,8 @@
+{
+  "csv_like": [
+    { "name": "Alice", "bio": "likes cats, dogs, and birds", "score": 100 },
+    { "name": "Bob", "bio": "said \"hi, there\"", "score": null },
+    { "name": "Carol", "bio": "", "score": 0 },
+    { "name": "Dave", "bio": "line1\nline2", "score": "$$NEG_INF$$" }
+  ]
+}

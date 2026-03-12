@@ -1,0 +1,8 @@
+// Test: Comma-separated table tokenization edge cases
+data[][] id,name,description,active,count
+  1,"Alice","simple",true,10
+  2,"Bob Smith","has spaces in name",false,0
+  3,"say \"hello\"","escaped \"quotes\" inside",true,-1
+  4,"","",null,99
+  5,"tab\there","newline\nhere",null,0
+  6,"has,comma","also,has,commas",true,inf

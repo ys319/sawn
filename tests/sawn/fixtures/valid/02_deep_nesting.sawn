@@ -1,0 +1,11 @@
+// Test: Deep nesting (5 levels) with siblings at intermediate depths
+a{}
+  b{}
+    c{}
+      d{}
+        e{}
+          value="deep"
+      sibling=42
+    other=true
+  top_level="accessible"
+x=1

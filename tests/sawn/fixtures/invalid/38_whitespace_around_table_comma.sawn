@@ -1,0 +1,3 @@
+// §3.5: No whitespace around commas in header or data rows
+data[][] name , age
+  "Alice",30

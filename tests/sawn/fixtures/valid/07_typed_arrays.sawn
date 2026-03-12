@@ -1,0 +1,23 @@
+// Test: Arrays with every value type
+numbers[]
+  1
+  -3
+  0
+  99.99
+  1e5
+
+strings[]
+  "hello"
+  ""
+  "with \"escapes\""
+  "multi\nline"
+
+booleans[]
+  true
+  false
+
+specials[]
+  null
+  inf
+  -inf
+  nan

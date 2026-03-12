@@ -1,0 +1,9 @@
+{
+  "backslash": "contains \\ backslash",
+  "quotes": "say \"hello\"",
+  "newline": "line1\nline2",
+  "tab": "col1\tcol2",
+  "combined": "path\\to\\\"file\"\nend",
+  "empty": "",
+  "just_escapes": "\\\"\n\t"
+}

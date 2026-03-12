@@ -1,0 +1,14 @@
+// Test: Multi-line strings (key= + indented continuation)
+simple=
+  Hello
+  World
+with_indent=
+  Line one
+    Indented line
+  Back to base
+config{}
+  query=
+    SELECT *
+    FROM users
+    WHERE active = true
+  name="test"

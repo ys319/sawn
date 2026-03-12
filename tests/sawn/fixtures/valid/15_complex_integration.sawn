@@ -1,0 +1,114 @@
+// Test: Complex integration test
+// Combines: root siblings, tables, nested objects, arrays with objects,
+// mixed types, empty structures, quoted keys, escape sequences, comments,
+// multi-line strings, anonymous arrays
+
+version=1
+format="sawn"
+"build-date"="2026-03-05"
+
+// Configuration section
+config{}
+  server{}
+    host="localhost"
+    port=8080
+    ssl=true
+    max_connections=inf
+    timeout=30.5
+    headers{}
+      "X-Custom"="value with \"quotes\""
+      "X Request Id"="abc-123"
+    allowed_origins[]
+      "http://localhost:3000"
+      "https://example.com"
+    middleware[]
+  database{}
+    primary{}
+      url="postgres://localhost:5432/main"
+      pool=10
+      ssl=false
+    replicas[][] host,port,readonly
+      "replica1.db.com",5432,true
+      "replica2.db.com",5433,true
+
+// Users section with heterogeneous array
+users[]
+  {}
+    id=1
+    name="Alice \"Admin\" Smith"
+    email="alice@example.com"
+    roles[]
+      "admin"
+      "user"
+    preferences{}
+      theme="dark"
+      notifications=true
+      language="en"
+    scores[][] subject,grade
+      "math",95
+      "science",88
+    bio=
+      Senior administrator.
+      Joined in 2020.
+    active=true
+  {}
+    id=2
+    name="Bob"
+    email="bob@example.com"
+    roles[]
+      "user"
+    preferences{}
+      theme="light"
+      notifications=false
+      language="ja"
+    scores[][] subject,grade
+      "math",72
+    bio=""
+    active=false
+  {}
+    id=3
+    name=""
+    email=null
+    roles[]
+    preferences{}
+    scores[][] subject,grade
+      "art",null
+    bio=null
+    active=null
+
+// Nested anonymous arrays (matrix pattern)
+matrix[]
+  []
+    1
+    2
+    3
+  []
+    4
+    5
+    6
+
+// Nested tables inside object elements
+projects[]
+  {}
+    name="Project X"
+    tasks[][] id,title,status,assignee
+      1,"Design","done","Alice"
+      2,"Implement","in_progress","Bob"
+      3,"Test","pending",null
+    budget=50000
+    tags[]
+      "priority"
+      "q1"
+  {}
+    name="Project Y"
+    tasks[][] id,title,status,assignee
+      10,"Research","done","Bob"
+    budget=null
+    tags[]
+
+// Root-level empty structures
+audit_log[]
+staging{}
+
+// Final scalar
+checksum="abc123"

@@ -1,0 +1,16 @@
+{
+  "name": "Luke",
+  "email": "luke@rebels.org",
+  "build-date": "2026-03-05",
+  "Content-Type": "text/html",
+  "_internal": "private",
+  "_debug": true,
+  "config": {
+    "host": "localhost",
+    "port": 8080
+  },
+  "data": [
+    { "id": 1, "name": "Alice" },
+    { "id": 2, "name": "Bob" }
+  ]
+}

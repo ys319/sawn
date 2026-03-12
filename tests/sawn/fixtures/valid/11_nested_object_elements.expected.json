@@ -1,0 +1,30 @@
+{
+  "teams": [
+    {
+      "name": "Alpha",
+      "active": true,
+      "leader": { "name": "Alice", "rank": 1 },
+      "members": [
+        { "name": "Bob", "role": "engineer", "score": 95 },
+        { "name": "Carol", "role": "designer", "score": 88 }
+      ],
+      "tags": ["elite", "remote"],
+      "history": [
+        { "year": 2020, "event": "founded" },
+        { "year": 2023, "event": "expanded" }
+      ],
+      "metadata": {}
+    },
+    {
+      "name": "Beta",
+      "active": false,
+      "leader": { "name": "Dave", "rank": 2 },
+      "members": [
+        { "name": "Eve", "role": "manager", "score": 77 }
+      ],
+      "tags": [],
+      "history": [],
+      "metadata": { "notes": "disbanded" }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "code": " if (x) {\n }",
+  "deep_first": "  first line\nsecond line",
+  "commented": "content here\nmore content",
+  "wrapper": {
+    "body": "   deeply indented\nnormal"
+  }
+}

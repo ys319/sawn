@@ -1,0 +1,2 @@
+// INVALID: Explicit positive sign
+value=+42

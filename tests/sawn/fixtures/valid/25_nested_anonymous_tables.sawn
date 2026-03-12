@@ -1,0 +1,7 @@
+// Test: Nested anonymous tables within array
+datasets[]
+  [][] name,age
+    "Alice",30
+    "Bob",25
+  [][] name,age
+    "Charlie",20

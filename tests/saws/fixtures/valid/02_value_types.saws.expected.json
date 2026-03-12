@@ -1,0 +1,13 @@
+[
+  { "label": "string", "value": "hello" },
+  { "label": "integer", "value": 42 },
+  { "label": "negative", "value": -7 },
+  { "label": "float", "value": 3.14 },
+  { "label": "exponent", "value": 10000000000 },
+  { "label": "bool_true", "value": true },
+  { "label": "bool_false", "value": false },
+  { "label": "null_val", "value": null },
+  { "label": "inf_pos", "value": "$$INF$$" },
+  { "label": "inf_neg", "value": "$$NEG_INF$$" },
+  { "label": "nan_val", "value": "$$NAN$$" }
+]

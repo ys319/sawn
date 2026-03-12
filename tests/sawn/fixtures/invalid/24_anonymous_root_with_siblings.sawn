@@ -1,0 +1,5 @@
+// INVALID: Anonymous root with other root-level entries
+[]
+  1
+  2
+name="test"

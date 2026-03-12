@@ -1,0 +1,4 @@
+// INVALID: Array-like children under a bare key (no [] or {})
+items
+  "sword"
+  "potion"

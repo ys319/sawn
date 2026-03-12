@@ -1,0 +1,4 @@
+[
+  { "full name": "Alice Smith", "home,address": "123 Main St", "true": "yes" },
+  { "full name": "Bob Jones", "home,address": "456 Oak Ave", "true": "no" }
+]

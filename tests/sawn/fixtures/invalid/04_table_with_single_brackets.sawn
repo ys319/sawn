@@ -1,0 +1,3 @@
+// INVALID: Table-style data using [] instead of [][]
+films[] episode,title,director
+  4,"A New Hope","George Lucas"

@@ -1,0 +1,4 @@
+// INVALID: Trailing comma in table row
+users[][] name,age
+  "Alice",30
+  "Bob",

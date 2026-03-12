@@ -1,0 +1,4 @@
+// INVALID: - marker (use {} for object elements)
+items[]
+  - name="Sword"
+    damage=50

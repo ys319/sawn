@@ -1,0 +1,3 @@
+// INVALID: Tab indentation (must use 2 spaces)
+config
+	host="localhost"

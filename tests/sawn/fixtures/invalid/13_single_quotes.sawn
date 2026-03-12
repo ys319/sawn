@@ -1,0 +1,2 @@
+// INVALID: Single-quoted strings are not allowed
+name='Luke'

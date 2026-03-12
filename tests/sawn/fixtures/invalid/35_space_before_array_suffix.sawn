@@ -1,0 +1,4 @@
+// §3: Space between key and [] is a parse error
+items []
+  1
+  2

@@ -1,0 +1,8 @@
+// Test: Keys with dots and hyphens must be quoted in v1.0
+"my.dotted.key"="dot separated"
+"my-hyphen-key"="hyphen separated"
+_leading_underscore="ok"
+"mix.of-all_styles"="combined"
+"a.b.c.d.e"="deeply dotted"
+"Content-Type"="text/html"
+"x-forwarded-for"="127.0.0.1"

@@ -1,0 +1,10 @@
+{
+  "everything": [
+    42,
+    "hello",
+    ["a", "b"],
+    [{ "x": 1, "y": 2 }, { "x": 3, "y": 4 }],
+    { "name": "obj", "value": true },
+    null
+  ]
+}

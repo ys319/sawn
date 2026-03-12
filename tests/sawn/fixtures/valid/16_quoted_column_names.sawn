@@ -1,0 +1,4 @@
+// Test: Quoted column names in table headers
+data[][] "column one","column two",regular
+  "a",1,true
+  "b",2,false

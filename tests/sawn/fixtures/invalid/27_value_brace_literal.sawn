@@ -1,0 +1,2 @@
+// INVALID: {} as a value (values are scalars only)
+data={}

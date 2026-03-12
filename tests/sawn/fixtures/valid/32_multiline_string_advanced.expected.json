@@ -1,0 +1,14 @@
+{
+  "extra_indent": "base\n    deep\n      deeper\nbase again",
+  "one_line": "solo",
+  "outer": {
+    "inner": {
+      "deep_ml": "deeply\nnested\ncontent",
+      "sibling": 42
+    }
+  },
+  "with_slashes": "http://example.com\n// this is NOT a comment\nend",
+  "before_blank": "first part\nsecond part",
+  "after_blank": "separate key",
+  "eof_terminated": "last line no trailing newline"
+}

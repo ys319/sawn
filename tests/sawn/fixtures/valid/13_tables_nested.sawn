@@ -1,0 +1,15 @@
+// Test: Tables nested inside objects at multiple depths
+root_table[][] x,y
+  1,2
+  3,4
+
+level1{}
+  table_here[][] a,b,c
+    "x",true,10
+    "y",false,20
+  level2{}
+    level3{}
+      deep_table[][] key,value
+        "foo",1
+        "bar",2
+      other=42

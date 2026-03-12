@@ -1,0 +1,13 @@
+// §2: All value types in Saws
+label,value
+"string","hello"
+"integer",42
+"negative",-7
+"float",3.14
+"exponent",1e10
+"bool_true",true
+"bool_false",false
+"null_val",null
+"inf_pos",inf
+"inf_neg",-inf
+"nan_val",nan

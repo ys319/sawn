@@ -1,0 +1,21 @@
+{
+  "root_table": [
+    { "x": 1, "y": 2 },
+    { "x": 3, "y": 4 }
+  ],
+  "level1": {
+    "table_here": [
+      { "a": "x", "b": true, "c": 10 },
+      { "a": "y", "b": false, "c": 20 }
+    ],
+    "level2": {
+      "level3": {
+        "deep_table": [
+          { "key": "foo", "value": 1 },
+          { "key": "bar", "value": 2 }
+        ],
+        "other": 42
+      }
+    }
+  }
+}

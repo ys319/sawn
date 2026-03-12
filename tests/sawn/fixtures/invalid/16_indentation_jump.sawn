@@ -1,0 +1,4 @@
+// INVALID: Indentation skips a depth level
+config{}
+  server{}
+      host="localhost"

@@ -1,0 +1,34 @@
+// Test: {} objects containing arrays, tables, nested objects, empty structures
+teams[]
+  {}
+    name="Alpha"
+    active=true
+    leader{}
+      name="Alice"
+      rank=1
+    members[][] name,role,score
+      "Bob","engineer",95
+      "Carol","designer",88
+    tags[]
+      "elite"
+      "remote"
+    history[]
+      {}
+        year=2020
+        event="founded"
+      {}
+        year=2023
+        event="expanded"
+    metadata{}
+  {}
+    name="Beta"
+    active=false
+    leader{}
+      name="Dave"
+      rank=2
+    members[][] name,role,score
+      "Eve","manager",77
+    tags[]
+    history[]
+    metadata{}
+      notes="disbanded"

@@ -1,0 +1,22 @@
+// Top-level comment
+
+// Another comment
+name="test"
+
+// Comment between entries
+
+config{}
+  // Comment inside object
+  host="localhost"
+  port=8080  // Inline comment
+
+  // Blank line above is ignored
+  debug=true
+
+items[]
+  // Comment inside array
+  1
+
+  2
+  // Comment between values
+  3

@@ -1,0 +1,2 @@
+// §1.2: // immediately adjacent to a value is a parse error
+a=42//comment

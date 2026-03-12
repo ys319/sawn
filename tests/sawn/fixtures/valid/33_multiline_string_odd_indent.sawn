@@ -1,0 +1,18 @@
+// Test: Multi-line string with odd-number leading spaces (§2.2)
+// Base indentation is stripped; remaining spaces are content.
+code=
+   if (x) {
+   }
+// §2.2: first line has more spaces than base indent
+deep_first=
+    first line
+  second line
+// §2.2: trigger line with inline comment
+commented= // this comment is stripped
+  content here
+  more content
+// §2.2: nested key with odd-indent content
+wrapper{}
+  body=
+       deeply indented
+    normal

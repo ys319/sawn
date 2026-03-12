@@ -1,0 +1,18 @@
+// Test: Every primitive value type and empty structures
+str="hello world"
+empty_str=""
+int=42
+negative=-7
+float=3.14
+sci=6.022e23
+sci_neg=1.5e-10
+bool_t=true
+bool_f=false
+n=null
+pos_inf=inf
+neg_inf=-inf
+not_a_number=nan
+zero=0
+neg_zero=-0
+empty_arr[]
+empty_obj{}

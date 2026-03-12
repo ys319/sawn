@@ -1,0 +1,14 @@
+// Test: Array mixing anonymous arrays, anonymous tables, primitives, and objects
+everything[]
+  42
+  "hello"
+  []
+    "a"
+    "b"
+  [][] x,y
+    1,2
+    3,4
+  {}
+    name="obj"
+    value=true
+  null

@@ -1,0 +1,3 @@
+// §3: Space between key and structure suffix is a parse error
+config {}
+  host="localhost"

@@ -1,0 +1,6 @@
+// Test: Saws edge cases — commas inside strings, explicit null/empty cells
+csv_like[][] name,bio,score
+  "Alice","likes cats, dogs, and birds",100
+  "Bob","said \"hi, there\"",null
+  "Carol","",0
+  "Dave","line1\nline2",-inf

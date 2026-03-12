@@ -1,0 +1,3 @@
+// §4: anonymous {} at root level is a parse error
+{}
+  name="test"

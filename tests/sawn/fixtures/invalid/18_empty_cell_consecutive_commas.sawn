@@ -1,0 +1,3 @@
+// INVALID: Consecutive commas in table row (empty cells not allowed)
+users[][] name,age,score
+  "Alice",,95

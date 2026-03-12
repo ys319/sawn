@@ -1,0 +1,4 @@
+// INVALID: Row has fewer columns than header
+data[][] a,b,c
+  1,2,3
+  4,5

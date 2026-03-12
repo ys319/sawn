@@ -1,0 +1,4 @@
+// INVALID: Table [][] with no columns but has children
+data[][]
+  1
+  2

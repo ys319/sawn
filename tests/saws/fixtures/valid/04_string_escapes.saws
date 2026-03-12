@@ -1,0 +1,9 @@
+// §2.1: Escape sequences in Saws values
+desc,value
+"tab","has\ttab"
+"newline","has\nnewline"
+"quote","has\"quote"
+"backslash","has\\backslash"
+"hex","hex\x41char"
+"null_char","has\0null"
+"bell","has\abell"

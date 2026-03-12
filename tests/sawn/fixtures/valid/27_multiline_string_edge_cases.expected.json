@@ -1,0 +1,14 @@
+{
+  "single_line": "Just one line",
+  "nested_ml": {
+    "description": "This object has\na multi-line value",
+    "count": 42
+  },
+  "items": [
+    {
+      "name": "Widget",
+      "notes": "Line one of notes\nLine two of notes",
+      "price": 9.99
+    }
+  ]
+}

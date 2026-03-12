@@ -1,0 +1,32 @@
+// Test: Multi-line string advanced edge cases
+// §2.2: Content with extra indentation preserved
+extra_indent=
+  base
+      deep
+        deeper
+  base again
+// §2.2: Single line (minimal multi-line)
+one_line=
+  solo
+// §2.2: Multi-line string inside deep nesting
+outer{}
+  inner{}
+    deep_ml=
+      deeply
+      nested
+      content
+    sibling=42
+// §2.2: Multi-line containing // (string priority §1.3)
+with_slashes=
+  http://example.com
+  // this is NOT a comment
+  end
+// §2.2: Blank line terminates content block
+before_blank=
+  first part
+  second part
+
+after_blank="separate key"
+// §2.2: Multi-line at end of file (EOF terminates)
+eof_terminated=
+  last line no trailing newline

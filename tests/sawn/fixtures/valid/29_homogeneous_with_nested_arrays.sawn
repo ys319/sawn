@@ -1,0 +1,55 @@
+// Test: Homogeneous object array with nested arrays — cannot be a table
+// Each object has the same keys, but "skills" and "projects" are arrays,
+// so this structure cannot be flattened into Saws tabular format.
+employees[]
+  {}
+    name="Alice"
+    age=30
+    active=true
+    skills[]
+      "TypeScript"
+      "Rust"
+      "Go"
+    projects[]
+      {}
+        name="sawn"
+        year=2024
+      {}
+        name="parser-bench"
+        year=2025
+  {}
+    name="Bob"
+    age=25
+    active=true
+    skills[]
+      "Python"
+      "SQL"
+    projects[]
+      {}
+        name="data-pipeline"
+        year=2023
+      {}
+        name="ml-toolkit"
+        year=2024
+      {}
+        name="analytics"
+        year=2025
+  {}
+    name="Carol"
+    age=35
+    active=false
+    skills[]
+      "Java"
+      "Kotlin"
+      "Scala"
+      "Clojure"
+    projects[]
+  {}
+    name="Dave"
+    age=28
+    active=true
+    skills[]
+    projects[]
+      {}
+        name="infra"
+        year=2025

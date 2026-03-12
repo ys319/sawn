@@ -1,0 +1,4 @@
+// INVALID: Multi-line string in table cell
+data[][] name,bio
+  "Alice",
+    Hello world

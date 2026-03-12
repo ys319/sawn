@@ -1,0 +1,15 @@
+// Test: Multi-line string edge cases (key= + indentation syntax)
+single_line=
+  Just one line
+nested_ml{}
+  description=
+    This object has
+    a multi-line value
+  count=42
+items[]
+  {}
+    name="Widget"
+    notes=
+      Line one of notes
+      Line two of notes
+    price=9.99

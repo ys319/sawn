@@ -1,0 +1,21 @@
+{
+  "null_char": "\u0000",
+  "bell": "\u0007",
+  "backspace": "\b",
+  "tab": "\t",
+  "newline": "\n",
+  "vertical_tab": "\u000b",
+  "form_feed": "\f",
+  "carriage_return": "\r",
+  "backslash": "\\",
+  "quote": "\"",
+  "hex_01": "\u0001",
+  "hex_06": "\u0006",
+  "hex_0e": "\u000e",
+  "hex_1f": "\u001f",
+  "hex_upper": "\u001f",
+  "hex_80": "\u0080",
+  "hex_ff": "\u00ff",
+  "combined": "\u0000\u0007\b\t\n\u000b\f\r\\\"",
+  "mixed": "start\u0001middle\u001fend"
+}

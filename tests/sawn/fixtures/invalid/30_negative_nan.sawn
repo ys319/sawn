@@ -1,0 +1,2 @@
+// §2.6: -nan is not valid; it is a parse error
+value=-nan

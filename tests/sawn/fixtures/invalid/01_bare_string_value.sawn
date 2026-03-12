@@ -1,0 +1,2 @@
+// INVALID: Unquoted string value (strings must be quoted)
+name=Luke

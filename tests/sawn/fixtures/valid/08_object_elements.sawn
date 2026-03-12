@@ -1,0 +1,11 @@
+// Test: Object elements in arrays including empty objects
+items[]
+  {}
+    name="Sword"
+    damage=50
+    enchanted=true
+  {}
+  {}
+    name="Potion"
+    effect="heal"
+    charges=3

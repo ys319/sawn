@@ -1,0 +1,5 @@
+// Test: Table with single column (minimum columns = 1)
+names[][] name
+  "Alice"
+  "Bob"
+  "Carol"

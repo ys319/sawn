@@ -1,0 +1,4 @@
+// INVALID: Duplicate keys within same object
+name="Alice"
+age=30
+name="Bob"

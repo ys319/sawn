@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "format": "sawn",
+  "build-date": "2026-03-05",
+  "config": {
+    "server": {
+      "host": "localhost",
+      "port": 8080,
+      "ssl": true,
+      "max_connections": "$$INF$$",
+      "timeout": 30.5,
+      "headers": {
+        "X-Custom": "value with \"quotes\"",
+        "X Request Id": "abc-123"
+      },
+      "allowed_origins": [
+        "http://localhost:3000",
+        "https://example.com"
+      ],
+      "middleware": []
+    },
+    "database": {
+      "primary": {
+        "url": "postgres://localhost:5432/main",
+        "pool": 10,
+        "ssl": false
+      },
+      "replicas": [
+        { "host": "replica1.db.com", "port": 5432, "readonly": true },
+        { "host": "replica2.db.com", "port": 5433, "readonly": true }
+      ]
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice \"Admin\" Smith",
+      "email": "alice@example.com",
+      "roles": ["admin", "user"],
+      "preferences": {
+        "theme": "dark",
+        "notifications": true,
+        "language": "en"
+      },
+      "scores": [
+        { "subject": "math", "grade": 95 },
+        { "subject": "science", "grade": 88 }
+      ],
+      "bio": "Senior administrator.\nJoined in 2020.",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "roles": ["user"],
+      "preferences": {
+        "theme": "light",
+        "notifications": false,
+        "language": "ja"
+      },
+      "scores": [
+        { "subject": "math", "grade": 72 }
+      ],
+      "bio": "",
+      "active": false
+    },
+    {
+      "id": 3,
+      "name": "",
+      "email": null,
+      "roles": [],
+      "preferences": {},
+      "scores": [
+        { "subject": "art", "grade": null }
+      ],
+      "bio": null,
+      "active": null
+    }
+  ],
+  "matrix": [
+    [1, 2, 3],
+    [4, 5, 6]
+  ],
+  "projects": [
+    {
+      "name": "Project X",
+      "tasks": [
+        { "id": 1, "title": "Design", "status": "done", "assignee": "Alice" },
+        {
+          "id": 2,
+          "title": "Implement",
+          "status": "in_progress",
+          "assignee": "Bob"
+        },
+        { "id": 3, "title": "Test", "status": "pending", "assignee": null }
+      ],
+      "budget": 50000,
+      "tags": ["priority", "q1"]
+    },
+    {
+      "name": "Project Y",
+      "tasks": [
+        { "id": 10, "title": "Research", "status": "done", "assignee": "Bob" }
+      ],
+      "budget": null,
+      "tags": []
+    }
+  ],
+  "audit_log": [],
+  "staging": {},
+  "checksum": "abc123"
+}

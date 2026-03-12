@@ -1,0 +1,8 @@
+// §1.2: Comment-only lines are ignored
+// This is a comment
+name,score
+
+// Blank lines are also ignored
+
+"Alice",100 // inline comment
+"Bob",200

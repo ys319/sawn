@@ -1,0 +1,3 @@
+// §3.5: Separator between [][] and first column MUST be exactly one space
+data[][]name,age
+  "Alice",30

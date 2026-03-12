@@ -1,0 +1,2 @@
+// INVALID: Bare key with no {} suffix (use key{} for objects)
+metadata
