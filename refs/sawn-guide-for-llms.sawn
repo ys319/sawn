@@ -1,0 +1,105 @@
+// Sawn — indentation-based data format
+// The root of a document is an implicit object.
+// Indent with exactly 2 spaces per level. Tabs are forbidden.
+// Comments: // to end of line. Inline comments need a preceding space.
+// Blank lines are ignored (except: they terminate multi-line strings).
+
+// Key-value pairs: key=value with NO spaces around =
+name="MyApp"
+version="2.1.0"
+debug=false
+count=3
+rate=0.95
+offset=-1
+scientific=6.022e23
+
+// All strings must be quoted. No bare/unquoted strings.
+// Numbers: integers, decimals, exponentials (JSON rules — no leading zeros, no +42).
+// Bare tokens: true, false, null, inf, -inf, nan. (-nan is invalid.)
+
+// String escapes: \t \n \r \0 \a \b \v \f \\ \" and \xHH (2 hex digits, U+0000-U+00FF).
+// \uXXXX is NOT available — write Unicode characters directly.
+// Literal control chars U+0000-U+001F are forbidden in strings; use escapes.
+greeting="hello\tworld"
+byte="\xff"
+
+// Object: key{} — no space before {}. Children indented one level.
+database{}
+  host="db.example.com"
+  port=5432
+  pool{}
+    min=2
+    max=10
+
+// Empty object is valid
+metadata{}
+
+// Array: key[] — one element per line, indented one level.
+features[]
+  "search"
+  "export"
+  true
+  42
+
+// Empty array is valid
+tags[]
+
+// Array of objects: anonymous {} inside []
+servers[]
+  {}
+    host="alpha"
+    port=8080
+  {}
+    host="beta"
+    port=8081
+
+// Nested arrays: anonymous [] inside []
+matrix[]
+  []
+    1
+    2
+  []
+    3
+    4
+
+// Table: key[][] col1,col2,... — exactly one space after [][],
+// then comma-separated column names. No spaces around commas.
+// Data rows indented one level, also comma-separated.
+// Every row must match column count. No empty cells (use null or "").
+// Semantically equivalent to an array of objects.
+users[][] name,age,role
+  "Alice",30,"admin"
+  "Bob",25,"user"
+  "Charlie",null,"guest"
+
+// Quote column names that aren't identifiers or are reserved words
+scores[][] "player name",score,"is_top?"
+  "Alice",100,"yes"
+
+// Keys matching [a-zA-Z_][a-zA-Z0-9_]* can be bare. Otherwise quote them.
+// Reserved words (true, false, null, inf, nan) as keys must be quoted.
+"content-type"="application/json"
+"true"=1
+"42"="answer"
+limit=inf
+
+// Multi-line string: = followed by newline (nothing else), content indented one level.
+// Base indentation is stripped. Extra spaces beyond it are preserved.
+// // inside content is literal, not a comment.
+// The block terminates at a less-indented line or a completely blank line (0 spaces).
+// To include an empty line in content, write a line with ONLY the base indentation
+// spaces — do NOT leave it completely blank or it will terminate the block.
+// To produce a trailing LF, end with an indentation-only line.
+description=
+  First paragraph.
+  
+  Second paragraph.
+  
+
+// Anonymous root: a document can be just [] or [][] as the sole root entry.
+// Anonymous {} at root is forbidden (the root is already an object).
+// Example of an anonymous root array (cannot coexist with other root entries):
+// []
+//   1
+//   2
+//   3

@@ -38,9 +38,13 @@ config{}
 
 ## Install
 
-```ts
-// Deno / JSR
-import { parse, stringify } from "@ys319/sawn";
+Available on [JSR](https://jsr.io/@ys319/sawn):
+
+```bash
+deno add jsr:@ys319/sawn
+pnpm add jsr:@ys319/sawn
+npx jsr add @ys319/sawn
+bunx jsr add @ys319/sawn
 ```
 
 ## Usage
@@ -100,15 +104,31 @@ Custom error class with `line` and optional `column` properties.
 
 ## Why Sawn?
 
-| Feature        | JSON        | YAML               | Sawn                        |
-| -------------- | ----------- | ------------------ | --------------------------- |
-| String syntax  | 1 way       | 5+ ways            | 2 ways (quoted + multiline) |
-| Array syntax   | 1 way       | 2–3 ways           | 1 way                       |
-| Type ambiguity | None        | Yes (`NO` → false) | None                        |
-| Tabular data   | Repeat keys | Repeat keys        | Table syntax                |
-| Anchors/aliases| —           | Yes                | No                          |
-| Custom tags    | —           | Yes                | No                          |
-| Flow syntax    | Only        | Yes                | No                          |
+| Feature         | JSON        | YAML               | Sawn                        |
+| --------------- | ----------- | ------------------ | --------------------------- |
+| String syntax   | 1 way       | 5+ ways            | 2 ways (quoted + multiline) |
+| Array syntax    | 1 way       | 2–3 ways           | 1 way                       |
+| Type ambiguity  | None        | Yes (`NO` → false) | None                        |
+| Tabular data    | Repeat keys | Repeat keys        | Table syntax                |
+| Anchors/aliases | —           | Yes                | No                          |
+| Custom tags     | —           | Yes                | No                          |
+| Flow syntax     | Only        | Yes                | No                          |
+
+## LLM Integration
+
+### Reading Sawn
+
+LLMs can read Sawn without any special prompting. The syntax is close enough to
+familiar formats (indentation-based nesting, `key=value`, `//` comments) that
+models parse it correctly out of the box. If a model struggles with less common
+constructs (tables, multi-line strings), include the guide file below.
+
+### Writing Sawn
+
+To have an LLM generate Sawn output, include
+[`refs/sawn-guide-for-llms.sawn`](refs/sawn-guide-for-llms.sawn) in the prompt
+context. This single file covers the full syntax through annotated examples — no
+separate spec reading required.
 
 ## Docs
 
